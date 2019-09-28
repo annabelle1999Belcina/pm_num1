@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import CountWords from './CountWords';
+import './MyStyle.css'
 
 
 

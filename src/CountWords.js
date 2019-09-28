@@ -29,21 +29,20 @@ class CountWords extends Component{
     render() {
       const { sentence, word, count, occurrence } = this.state;
       return (
-      <div>
-        Sentence: <input placeholder="input sentence here..."onChange={e => this.setState({ sentence: e.target.value })}></input>
-        &nbsp; &nbsp;
-        Words: <input placeholder="input words here..." onChange={e=> this.setState({ word: e.target.value })}></input>
-        <div>
-         <button onClick={event => this.inputHandler(event)}>Count</button></div>
-        <div>
-        <br/><br/>
-        Inputed text:{sentence}</div>
-        <div>
-          </div>
-            words:{count}
-          <div>
-        word occurrence:{word} : {occurrence}</div>
-      </div>
+        <div class = "container">
+          <center>
+            <div class ="box">
+              <h1> Sentence: <input placeholder="input sentence here..."onChange={e => this.setState({ sentence: e.target.value })}></input></h1>
+              <br></br>
+              <h1>Words: <input placeholder="input words here..." onChange={e=> this.setState({ word: e.target.value })}></input></h1>
+              <div><button onClick={event => this.inputHandler(event)}>Count</button></div>
+              
+              <div><h2>Inputed text: {sentence}</h2></div>
+              <div><h2> words: {count}</h2></div>
+              <div><h2>word occurrence:{word} : {occurrence}</h2></div>
+            </div>
+          </center>
+        </div>
       );    
     }
   }
